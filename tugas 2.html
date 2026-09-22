@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas CSS Form Bebi</title>
+</head>
+
+<style>
+
+fieldset{
+    margin:2em 0;
+    padding: 1em 2em;
+    border: solid 5px #a5e1e3;
+    border-radius: 4px;
+    min-height: 200px;
+}
+    legend {
+    font-size: 16px;
+    background-color: lightgoldenrodyellow;
+    width: fit-content;
+    max-width: 500px;
+    padding: 10px;
+
+}
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: rgb(238, 178, 213);
+    }
+     label{
+        display: inline-block;
+        width: 180px;
+        margin-bottom: 10px;
+    }
+
+    input, textarea, select{
+        margin-bottom: 10px;
+    }
+        textarea{
+        vertical-align: top;
+    }
+
+    button{
+        background-color: lightgoldenrodyellow;
+    }
+</style>
+
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Form Data Diri</legend>
+            <label for="uname">Nama:</label>
+            <input type="text" name="uname" id="Nama" placeholder="Input nama"/>
+            <br>
+
+            <label for="password">Password:</label>
+            <input type="password" name="pasword" id="password" placeholder="Input password" />
+            <br>
+
+            <label for="alamat"> Alamat:</label>
+        <textarea name="alamat" id="alamat" placeholder="Input alamat" cols="30" rows="5"></textarea>
+        <br>
+
+        <label for="Jenis Kelamin">Jenis Kelamin:</label><br>
+        <input type="radio" name="sex" value="Pria">Pria</label><br>
+        <label>
+        <input type="radio" name="sex" value="wanita">
+        Wanita
+        </label><br>
+
+        <label for="Informasi Yang Disukai">
+            Informasi Yang Disukai:</label><br>
+        <input type="checkbox" name="Informasi Yang Disukai" value="Olahraga">Olahraga</label><br>
+        <label>
+        <input type="checkbox" name="Informasi Yang Disukai" value="Traveling">
+        Traveling
+        </label><br>
+         <label>
+        <input type="checkbox" name="Informasi Yang Disukai" value="Kesehatan">
+        Kesehatan
+        </label><br>
+
+        <label for="prodi">Program Studi:</label><br>
+        <select name="prodi" id="prodi">
+    <option value="" selected disabled>-- Pilih Program Studi --</option>
+    <option value="TI">S1 - Teknologi Informasi</option>
+    <option value="ILKOM">S1 - Ilmu Komputer</option>
+    </select>
+        <br>
+
+        <button type="submit" name="btnRegister">Submit</button>
+        <input type="reset" value="reset">
+        </fieldset>
+    </form>
+    
+</body>
+</html>
